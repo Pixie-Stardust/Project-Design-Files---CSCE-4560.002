@@ -1,0 +1,64 @@
+
+Arcryptix - Tool Descriptions for Service Offerings
+---------------------------------------------------
+
+VAPT Essentials – Tool Breakdown
+
+Nmap – Network scanner used to find live hosts, open ports, and services running on servers. Essential for recon.
+Ghidra – Reverse engineering framework by the NSA, used for analyzing binaries and malware during deeper exploit investigations.
+Burp Suite – Industry-leading web application testing suite for intercepting and manipulating HTTP/S traffic.
+Nikto – Web server scanner that checks for outdated software, common misconfigs, and known vulnerabilities.
+Metasploit – Exploitation framework that tests for and simulates real-world attacks using known vulnerabilities.
+Gobuster / dirb / ffuf / wfuzz – Directory and file brute-forcers to discover hidden paths on web servers.
+OWASP Zap – Open-source alternative to Burp Suite; used for automated web vulnerability scans.
+SQLmap – Automates SQL injection discovery and exploitation.
+Amass / DNSenum – Subdomain and DNS enumeration tools used for asset discovery and domain mapping.
+
+
+Regulatory Compliance Evaluation – Tools + Methods
+
+EDR (Endpoint Detection & Response) – Solutions like CrowdStrike, SentinelOne, or Wazuh for endpoint threat detection.
+Audit Logging – Tracks user activity, logins, file access, and admin changes.
+Access Control Reviews – Reviews who has access to which systems and why.
+Policy Templates – Includes Acceptable Use, Incident Response, MFA Enforcement, etc.
+Framework Mapping – Mapping current posture to HIPAA, GDPR, NIST 800-53, PCI DSS, and more.
+
+
+Real-Time Monitoring Setup – Tool Breakdown
+
+ELK Stack – Collect logs (Logstash), index/store them (Elasticsearch), and visualize (Kibana).
+Wazuh / Ossec – Lightweight agents for SIEM and FIM (file integrity monitoring).
+Suricata / Zeek – Network traffic analyzers for detecting malicious activity.
+Auditd + Filebeat – Linux tools to track command execution and file changes.
+Sigma / YARA – Detection rule sets to identify malware and suspicious behaviors.
+Graylog / Splunk – Log analysis platforms; Graylog is open-source, Splunk is enterprise.
+
+
+MFA Integration – Libraries & Tools
+
+speakeasy – Node.js library for TOTP 2FA integration.
+pyotp – Python TOTP implementation for MFA integration in Flask/Django apps.
+Google Authenticator / Authy – Common user-side apps for generating secure codes.
+qrcode / pico – Libraries to generate QR codes for mobile 2FA setup.
+Fail2ban – Blocks IPs after failed login attempts; prevents brute-force attacks.
+OpenOTP / FreeIPA – LDAP-based solutions for managing MFA in enterprise environments.
+
+
+DDoS Risk Assessment – Tools Explained
+
+LOIC / HOIC – GUI tools that generate artificial traffic to simulate DDoS conditions.
+Hping3 – Advanced packet crafter for SYN floods, ping floods, etc.
+Slowloris – App-layer DoS tool that holds connections open to exhaust resources.
+Tsunami – Automated scanner used in some stress testing scenarios.
+Scapy – Python tool to craft and send packets for low-level traffic simulation.
+Cloudflare / AWS WAF – Enterprise platforms for web firewalling and DDoS mitigation.
+
+
+Physical Testing Tools/Methods
+
+Wall-jack testing – Plugging into open ethernet ports to test network exposure.
+WiFi probing – Attempting to break into WPA2-secured networks.
+RFID spoofing – Cloning RFID badges to simulate unauthorized access.
+Tailgating – Attempting to physically follow someone into secure spaces.
+USB drop – Leaving baited USBs to test employee security awareness.
+Unattended terminal audit – Checking for open terminals or insecure desktops.
